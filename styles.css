@@ -44,6 +44,8 @@ form {
     display: flex;
     border-radius: 5px;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
     width: 445px;
     height: 100px;
     background-color: #ffffff;
