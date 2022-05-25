@@ -9,13 +9,15 @@
       <section class="title">
         <h1>✨Self Care Center✨</h1>
       </section>
-      <form>
         <h2>Which type of message?</h2>
+      <form>
+        <div>
           <input type="radio" id="affirmation" name="nice" value="affirmation">
-          <label for="affirmation">affirmation</label>
+          <label class="form-controls" for="affirmation">affirmation</label>
           <input type="radio" id="mantra" name="nice" value="mantra">
-          <label for="mantra">mantra</label>
+          <label class="form-controls" for="mantra">mantra</label><br><br>
           <button type="submit">Receive Message</button>
+        </div>
       </form>
       <section class="box">
         <img src="assets/meditate.svg" class="cookpot"></img>
@@ -24,7 +26,7 @@
         <h3 class="word-suggestion hidden"></h3>
         <h4 class="made-meals"></h4>
       </section>
-      <button type="submit">Add Message</button>
+      <!-- <button class ="add-recipe hidden"type="submit">Add Message</button> -->
     </main>
     <script type="text/javascript" src="main.js"></script>
   </body>
