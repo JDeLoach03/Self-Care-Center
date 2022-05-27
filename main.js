@@ -1,9 +1,11 @@
 //querySelectors go here
-var messageButton = document.querySelector('.button');
-var hiddenBox = document.querySelector('.words-hidden');
-var messageBox = document.querySelector('.box');
-
-
+var messageButton = document.querySelector('.button')
+var inputValue = document.querySelectorAll('input[type="radio"]')
+var bellIcon = document.querySelector('.meditate')
+var addedWords = document.querySelector('.made-nice-words')
+var box = document.querySelector('.box')
+var form = document.querySelector('#form')
+var hiddenWords = document.querySelector('.words-hidden')
 
 
 
@@ -45,7 +47,7 @@ var mantras = [
 ];
 
 //Event listeners go here
-messageButton.addEventListener('click', switchBoxes)
+
 
 
 
@@ -55,11 +57,3 @@ messageButton.addEventListener('click', switchBoxes)
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
   }
-
-  function switchBoxes() {
-    hiddenBox.classList.remove('hidden')
-    messageBox.classList.add('hidden');
-  }
-
-var hiddenBox = document.querySelector('.words-hidden');
-var messageBox = document.querySelector('.box');
