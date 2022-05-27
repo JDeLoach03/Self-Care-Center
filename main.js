@@ -48,7 +48,7 @@ var mantras = [
 ];
 
 //Event listeners go here
-messageButton.addEventListener('click', changeView)
+messageButton.addEventListener('click', newWords)
 
 
 
@@ -63,5 +63,16 @@ function getRandomIndex(array) {
   function changeView() {
     box.classList.add('hidden')
     hiddenWords.classList.remove('hidden')
-    clear.removeAttribute('disabled')
   }
+
+  function newWords(event) {
+    event.preventDefault() 
+    changeView()
+  if (inputValue.checked === 'affirmations') {
+    console.log(affirmations[getRandomIndex(affirmations)])
+    console.log('affirms')
+  } else {
+    console.log((mantras[getRandomIndex(mantras)]))
+    console.log('mantras')
+  }
+}
