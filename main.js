@@ -6,6 +6,7 @@ var addedWords = document.querySelector('.made-nice-words')
 var box = document.querySelector('.box')
 var form = document.querySelector('#form')
 var hiddenWords = document.querySelector('.words-hidden')
+var clear = document.querySelector('.clear')
 
 
 
@@ -47,7 +48,7 @@ var mantras = [
 ];
 
 //Event listeners go here
-
+messageButton.addEventListener('click', changeView)
 
 
 
@@ -56,4 +57,11 @@ var mantras = [
 
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
+  }
+
+
+  function changeView() {
+    box.classList.add('hidden')
+    hiddenWords.classList.remove('hidden')
+    clear.removeAttribute('disabled')
   }
