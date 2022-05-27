@@ -53,14 +53,16 @@ form {
 }
 
 
-/* input[type="radio"] {
-    margin: 0px 10px 0px 10px
-} */
-
 form > button {
     align-items: center;
 }
 
+
+.div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 
 img {
     height: 150px;
