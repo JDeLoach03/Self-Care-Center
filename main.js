@@ -1,5 +1,11 @@
 //querySelectors go here
-
+var messageButton = document.querySelector('.button')
+var inputValue = document.querySelectorAll('input[type="radio"]')
+var bellIcon = document.querySelector('.meditate')
+var addedWords = document.querySelector('.made-nice-words')
+var box = document.querySelector('.box')
+var form = document.querySelector('#form')
+var hiddenWords = document.querySelector('.words-hidden')
 
 
 
