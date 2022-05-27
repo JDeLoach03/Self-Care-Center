@@ -1,4 +1,8 @@
 //querySelectors go here
+var messageButton = document.querySelector('.button');
+var hiddenBox = document.querySelector('.words-hidden');
+var messageBox = document.querySelector('.box');
+
 
 
 
@@ -41,7 +45,7 @@ var mantras = [
 ];
 
 //Event listeners go here
-
+messageButton.addEventListener('click', switchBoxes)
 
 
 
@@ -51,3 +55,11 @@ var mantras = [
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
   }
+
+  function switchBoxes() {
+    hiddenBox.classList.remove('hidden')
+    messageBox.classList.add('hidden');
+  }
+
+var hiddenBox = document.querySelector('.words-hidden');
+var messageBox = document.querySelector('.box');
