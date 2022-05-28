@@ -45,6 +45,7 @@ form {
     border-radius: 5px;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: flex-end;
     align-content: space-around;
     align-items: stretch;
     width: 500px;
@@ -53,15 +54,30 @@ form {
 }
 
 
-form > button {
+
+label.form-controls {
+    font-style: italic;
+}
+
+
+button {
     align-items: center;
+    background-color: #134d71;
+    color: #ffffff;
 }
 
 
 .div {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.fix-button {
+    display: flex;
+    justify-content: center;
+    justify-items: flex-start;
+    padding: 10px;
 }
 
 img {
@@ -81,18 +97,10 @@ img {
     background-color: #ffffff;
 }
 
-
-.words {
-    display: flex;
-    margin: 80px;
-    border-radius: 5px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    width: 700px;
-    height: 150px;
-    background-color: #ffffff;
-
+.made-nice-words {
+    font-size: 25px;
+    font-weight: normal;
+    align-items: center;
 }
 
 .hidden {
