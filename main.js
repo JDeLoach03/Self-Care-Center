@@ -7,6 +7,8 @@ var box = document.querySelector('.box')
 var form = document.querySelector('#form')
 var hiddenWords = document.querySelector('.words-hidden')
 var clear = document.querySelector('.clear')
+// var mantraRadioBtn = document.querySelector('#mantra').disabled=true;
+// var affirmRadioBtn = document.querySelector('#affirmation').disabled=true;
 
 
 
@@ -48,7 +50,10 @@ var mantras = [
 ];
 
 //Event listeners go here
+// form.addEventListener('submit', newWords)
+// clear.addEventListener('click', clearOut)
 messageButton.addEventListener('click', newWords)
+clear.addEventListener('click', clearText)
 
 
 
@@ -59,12 +64,10 @@ function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
   }
 
-
   function changeView() {
     box.classList.add('hidden')
     hiddenWords.classList.remove('hidden')
   }
-
 
  function newWords(event) {
      event.preventDefault()
@@ -76,33 +79,18 @@ function getRandomIndex(array) {
    }
  }
 
-
 function displayText(text) {
-  addedWords.innerText = text
+  addedWords.innerHTML = text
 }
 
+function clearText(event) {
+  event.preventDefault
+  box.classList.remove('hidden');
+  hiddenWords.classList.add('hidden')
+  addedWords.innerHTML = ''
+}
 
-
-//  changeView()
-//     event.preventDefault()
-//     for (var i = 0; i < inputValue.length; i++) {
-//         if (inputValue[i].checked) {
-//             console.log(affirmations[getRandomIndex(affirmations)])
-//         } else {
-//             console.log(mantras[getRandomIndex(mantras)])
-//         }
-        
-//     }
-
-
-
-       
-
-//   if (inputValue.checked) {
-//     console.log(affirmations[getRandomIndex(affirmations)])
-//   } else {
-//     console.log((mantras[getRandomIndex(mantras)]))
-//     console.log('mantras')
-//     console.log(inputValue.checked)
-//   }
+// function noButtons() {
+//   if ()
 // }
+
