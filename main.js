@@ -7,6 +7,8 @@ var box = document.querySelector('.box')
 var form = document.querySelector('#form')
 var hiddenWords = document.querySelector('.words-hidden')
 var clear = document.querySelector('.clear')
+var mantraChoice = document.querySelector('#mantra')
+var affirmChoice = document.querySelector('#affirmation')
 
 
 
@@ -49,8 +51,7 @@ var mantras = [
 
 //Event listeners go here
 messageButton.addEventListener('click', newWords)
-
-
+clear.addEventListener('click', clearText)
 
 
 //functions go here 
@@ -59,50 +60,36 @@ function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
   }
 
-
   function changeView() {
     box.classList.add('hidden')
     hiddenWords.classList.remove('hidden')
   }
 
-
  function newWords(event) {
-     event.preventDefault()
-     changeView()
+    event.preventDefault()
    if (inputValue[0].checked) {
-      displayText(affirmations[getRandomIndex(affirmations)])
+    changeView()
+      addedWords.innerText = affirmations[getRandomIndex(affirmations)]
+   } else if(inputValue[1].checked) {
+    changeView()
+      addedWords.innerText = (mantras[getRandomIndex(mantras)])
    } else {
-      displayText(mantras[getRandomIndex(mantras)])
+     alert('No button picked!!')
    }
  }
 
 
-function displayText(text) {
-  addedWords.innerText = text
+function clearText() {
+  mantraChoice.checked = false;
+  affirmChoice.checked = false;
+if (!box.classList.contains('hidden')) {
+    clear.classList.add('hidden')
+} else {
+  box.classList.remove('hidden')
+  hiddenWords.classList.add('hidden')
+}
+ 
 }
 
 
 
-//  changeView()
-//     event.preventDefault()
-//     for (var i = 0; i < inputValue.length; i++) {
-//         if (inputValue[i].checked) {
-//             console.log(affirmations[getRandomIndex(affirmations)])
-//         } else {
-//             console.log(mantras[getRandomIndex(mantras)])
-//         }
-        
-//     }
-
-
-
-       
-
-//   if (inputValue.checked) {
-//     console.log(affirmations[getRandomIndex(affirmations)])
-//   } else {
-//     console.log((mantras[getRandomIndex(mantras)]))
-//     console.log('mantras')
-//     console.log(inputValue.checked)
-//   }
-// }
