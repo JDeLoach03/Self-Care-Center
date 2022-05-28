@@ -65,14 +65,34 @@ function getRandomIndex(array) {
     hiddenWords.classList.remove('hidden')
   }
 
-  function newWords(event) {
-    event.preventDefault() 
+
+ function newWords(event) {
     changeView()
-  if (inputValue.checked === 'affirmations') {
-    console.log(affirmations[getRandomIndex(affirmations)])
-    console.log('affirms')
-  } else {
-    console.log((mantras[getRandomIndex(mantras)]))
-    console.log('mantras')
-  }
-}
+    event.preventDefault()
+    for (var i = 0; i < inputValue.length; i++) {
+        if (inputValue[i].checked) {
+            console.log(affirmations[getRandomIndex(affirmations)])
+        } else {
+            console.log(mantras[getRandomIndex(mantras)])
+        }
+        
+    }
+ }
+
+
+
+
+
+
+
+       
+
+//   if (inputValue.checked === 'affirmations') {
+//     console.log(affirmations[getRandomIndex(affirmations)])
+    
+//   } else {
+//     console.log((mantras[getRandomIndex(mantras)]))
+//     console.log('mantras')
+//     console.log(inputValue.checked)
+//   }
+// }
