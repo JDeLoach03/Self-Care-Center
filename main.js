@@ -70,13 +70,16 @@ function getRandomIndex(array) {
      event.preventDefault()
      changeView()
    if (inputValue[0].checked) {
-       console.log('affirm')
-    console.log(affirmations[getRandomIndex(affirmations)])
+      displayText(affirmations[getRandomIndex(affirmations)])
    } else {
-       console.log(mantras[getRandomIndex(mantras)])
-       console.log('mantra')
+      displayText(mantras[getRandomIndex(mantras)])
    }
  }
+
+
+function displayText(text) {
+  addedWords.innerText = text
+}
 
 
 
