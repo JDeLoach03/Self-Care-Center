@@ -67,29 +67,36 @@ function getRandomIndex(array) {
 
 
  function newWords(event) {
-    changeView()
-    event.preventDefault()
-    for (var i = 0; i < inputValue.length; i++) {
-        if (inputValue[i].checked) {
-            console.log(affirmations[getRandomIndex(affirmations)])
-        } else {
-            console.log(mantras[getRandomIndex(mantras)])
-        }
-        
-    }
+     event.preventDefault()
+     changeView()
+   if (inputValue[0].checked) {
+       console.log('affirm')
+    console.log(affirmations[getRandomIndex(affirmations)])
+   } else {
+       console.log(mantras[getRandomIndex(mantras)])
+       console.log('mantra')
+   }
  }
 
 
 
-
+//  changeView()
+//     event.preventDefault()
+//     for (var i = 0; i < inputValue.length; i++) {
+//         if (inputValue[i].checked) {
+//             console.log(affirmations[getRandomIndex(affirmations)])
+//         } else {
+//             console.log(mantras[getRandomIndex(mantras)])
+//         }
+        
+//     }
 
 
 
        
 
-//   if (inputValue.checked === 'affirmations') {
+//   if (inputValue.checked) {
 //     console.log(affirmations[getRandomIndex(affirmations)])
-    
 //   } else {
 //     console.log((mantras[getRandomIndex(mantras)]))
 //     console.log('mantras')
