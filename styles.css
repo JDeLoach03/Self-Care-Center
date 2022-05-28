@@ -97,13 +97,28 @@ img {
     background-color: #ffffff;
 }
 
+.words-hidden {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .made-nice-words {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: normal;
     align-items: center;
+}
+
+.clear {
+    align-items: center;
+    background-color: #134d71;
+    color: #ffffff;
+    width: 32.5% ;
 }
 
 .hidden {
     display: none!important;
   }
-  
+

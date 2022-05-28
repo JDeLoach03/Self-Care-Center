@@ -7,8 +7,8 @@ var box = document.querySelector('.box')
 var form = document.querySelector('#form')
 var hiddenWords = document.querySelector('.words-hidden')
 var clear = document.querySelector('.clear')
-// var mantraRadioBtn = document.querySelector('#mantra').disabled=true;
-// var affirmRadioBtn = document.querySelector('#affirmation').disabled=true;
+var mantraChoice = document.querySelector('#mantra')
+var affirmChoice = document.querySelector('#affirmation')
 
 
 
@@ -50,12 +50,8 @@ var mantras = [
 ];
 
 //Event listeners go here
-// form.addEventListener('submit', newWords)
-// clear.addEventListener('click', clearOut)
 messageButton.addEventListener('click', newWords)
 clear.addEventListener('click', clearText)
-
-
 
 
 //functions go here 
@@ -70,27 +66,30 @@ function getRandomIndex(array) {
   }
 
  function newWords(event) {
-     event.preventDefault()
-     changeView()
+    event.preventDefault()
    if (inputValue[0].checked) {
-      displayText(affirmations[getRandomIndex(affirmations)])
+    changeView()
+      addedWords.innerText = affirmations[getRandomIndex(affirmations)]
+   } else if(inputValue[1].checked) {
+    changeView()
+      addedWords.innerText = (mantras[getRandomIndex(mantras)])
    } else {
-      displayText(mantras[getRandomIndex(mantras)])
+     alert('No button picked!!')
    }
  }
 
-function displayText(text) {
-  addedWords.innerHTML = text
-}
 
-function clearText(event) {
-  event.preventDefault
-  box.classList.remove('hidden');
+function clearText() {
+  mantraChoice.checked = false;
+  affirmChoice.checked = false;
+if (!box.classList.contains('hidden')) {
+    clear.classList.add('hidden')
+} else {
+  box.classList.remove('hidden')
   hiddenWords.classList.add('hidden')
-  addedWords.innerHTML = ''
+}
+ 
 }
 
-// function noButtons() {
-//   if ()
-// }
+
 
