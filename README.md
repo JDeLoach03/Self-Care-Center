@@ -1,24 +1,59 @@
 # Self Care Center
-## Overview
-How can I care for myself? One way is with affirmations and mantras!
-Affirmations are thoughts of positive self-empowerment, meant to assert your self-worth.
-Mantras are repetive phrases that are repeated again and again during mindfulness practices. Your challenge is to build an app that helps users remind themselves of their inherent value!
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/self-care-center.html). 
+## Table of Contents
+  - [Introduction](#introduction)
+  - [Technologies](#technologies)
+  - [Features](#features)
+  - [Illustrations](#illustrations)
+  - [Deployed Page](#deployed-page)
+  - [Possible Future Extensions](#possible-future-extensions)
+  - [Set Up](#set-up)
+  - [Organizational Resources](#organizational-resources)
+  - [Sources](#sources)
+  - [Contributors](#contributors)
+  - [Project Specs](#project-specs)
 
-## Learning Goals
+## Introduction
+  - The purpose of this project was to allow students to practice some of the foundational concepts learned so far within the module. There are other extensions that test different skills that we can build on. The project gave way to some customization (a ton of css practice, and html practice) which you can always work on and improve.
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+## Technologies
+  - Javascript
+  - HTML
+  - CSS
 
-## Setup
 
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
+## Illustrations
+  ![Self Care Center](https://frontend.turing.edu/projects/module-1/assets/self-care-center/self-care-0.png)
 
+## Features
+- Clicking on the button allows a random message to boost your spirits or a reminder to care for YOU because YOU are important 😊
+- The Choose Your Own Adventure I chose was the "Error handling and clear button". If neither mantra or affirmation is chosen, you will not be able to "receive the message" AND if you wish to clear the current message you have chosen, there is a button that allows you to reset and choose something else!
+
+## Deployed Page
+
+Visit our published Hang In There Site! [here](https://jdeloach03.github.io/Self-Care-Center/)
+
+## Possible Future Extensions
+  - Personally, I would like to delete some of the messages that don't apply to me, which would make it feel more personal in my opinion for an end user. Maybe something randomly chosen impacts them in a different way than I intended, so throwing it out, would feel sort of empowering!
+
+## Set Up
+
+1. Fork this repo  
+2. Clone the repo to your local machine
+3. View the project in the browser by running open index.html in your terminal.
+
+
+
+## Sources
+  - [MDN](http://developer.mozilla.org/en-US/)
+  - [JavaTPoint](https://www.javatpoint.com/how-to-check-a-radio-button-using-javascript)
+  - [YouTube](https://www.youtube.com/)
+  - [W3Schools](https://www.w3schools.com/)
+
+## Contributors
+  - [Joshua DeLoach](https://github.com/JDeLoach03)
+
+
+## Project Specs
+  - The project spec & rubric can be found [here](https://frontend.turing.edu/projects/module-1/self-care-center.html)
